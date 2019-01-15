@@ -40,11 +40,11 @@ body {
 /* Alert */
 .alert {
 	position: relative;
-	margin-top: 2em;
-	margin-bottom: 3em;
+	margin-top: 3em;
+	margin-bottom: 5em;
 	padding-top: 1.5em;
 	padding-bottom: 1.5em;
-	border: 1px solid #dccdc6;
+	border: 1px solid transparent;
 	border-radius: 0;
 	font-size: 0.85rem;
 	line-height: 1.3em;
@@ -124,4 +124,17 @@ body {
 	.navbar-brand > img {
 	   max-height: 80px;
 	}
+	div .buttons :first-child{
+      background-color: red;
+	}
+	div .buttons .btn-secondary{
+		color: red;
+	}
+	div .buttons .btn-secondary:hover, div .buttons .btn-secondary:focus{
+		background-color: blue;
+	}
+	div #navbarSupportedContent .btn{ 
+		background-color: red;	
+	}
+	 
 }
