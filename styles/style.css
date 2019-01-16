@@ -123,18 +123,46 @@ body {
 
 	.navbar-brand > img {
 	   max-height: 80px;
-	}
-	div .buttons :first-child{
-      background-color: red;
-	}
-	div .buttons .btn-secondary{
-		color: red;
-	}
-	div .buttons .btn-secondary:hover, div .buttons .btn-secondary:focus{
-		background-color: blue;
-	}
-	div #navbarSupportedContent .btn{ 
-		background-color: red;	
-	}
-	 
+	}	 
+}	 
+/*volunteer text red*/
+div .buttons .btn-secondary{
+	color: red;
+}
+/*volunteer button blue when hover or focus*/
+div .buttons .btn-secondary:hover, div .buttons .btn-secondary:focus{
+	background-color: blue;
+}
+/*two blue buttons color red*/
+div #navbarSupportedContent .btn, div .buttons :first-child{ 
+	background-color: red;	
+}
+/*screen size smaller than 320px*/
+@media screen and (max-width: 320px) {
+  /*keep buttons same line*/
+  div .jumbotron .buttons{
+	  display: flex;
+  }
+  /*fit button size*/
+	div .jumbotron .btn{
+		width: 50%;	
+   }
+}
+ /*put articles on a row*/
+ div.primary-content :nth-child(3){
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+div.primary-content > div.articles article {
+	flex-basis: 45%;
+	padding: 10px;
+}
+/*choose first article*/
+div.primary-content>div.articles article:nth-of-type(1) {
+	background-color: grey;
+}
+/*choose second article*/
+div.primary-content>div.articles article:nth-of-type(2) {
+  border: 1px solid grey;
 }
