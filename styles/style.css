@@ -25,6 +25,17 @@ body {
 	max-height: 40px;
 	width: auto;
 }
+/* add padding to navigation links
+ to spread them out a bit wider */
+.nav-item {
+	padding-right: 20px;
+}
+
+.nav-link {
+	border: 1px solid transparent;
+	margin-right: 90px;
+	padding: 5px 10px 0px 10px ;
+}
 
 .navbar-light .navbar-nav .nav-link {
 	color: #292b2c;
@@ -35,6 +46,29 @@ body {
 /* Buttons */
 .btn {
 	border-radius: 0.15em;
+}
+/* change the color of background of the buttons
+ and when hovered. the colour of the "volunteer" 
+ button*/
+ 
+.btn-primary {
+    background: #ce5f31;
+}
+
+.btn-primary:hover .btn-secondary:hover {
+	background: blue;
+}
+
+.btn-secondary {
+	color: #ce5f31;
+}
+
+/* to fit the buttons on the same line */
+
+@media screen and (max-width: 350px) {
+	.btn-lrg {
+	   font-size: 12px;
+   }
 }
 
 /* Alert */
@@ -124,4 +158,38 @@ body {
 	.navbar-brand > img {
 	   max-height: 80px;
 	}
+}
+/* reduce the size of "bikes for refugees" on 
+small screen */
+@media screen and (max-width: 320px) {
+    .display-3 {
+		font-size: 30px;
+	}
+}
+
+
+/* using flexbox to position text elements */
+
+.flexbox_practice {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.heading-underline {width: 100%;}
+
+.articles {display:flex;
+           justify-content: space-between;
+}
+
+.article-1, .article-2 {max-width: 47.5%;
+			padding: 20px 15px 0px 15px ;
+			
+		    }
+
+.articles > div:first-child {
+	            background-color: #ddd;
+}
+
+.articles > div:last-child {
+	            border: 1px solid #ddd;
 }
