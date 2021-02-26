@@ -1,4 +1,4 @@
-# bikes-for-refugees
+# bikes-for-peoppe
 Exercise for HTML lesson 1
  
 Fork the repository to your personal Github account and use the following terminal commands to download the files to your projects folder.
